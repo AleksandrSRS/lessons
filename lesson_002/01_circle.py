@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+import math
 # Есть значение радиуса круга
 radius = 42
 
@@ -9,8 +9,10 @@ radius = 42
 #       формулу можно подсмотреть в интернете,
 #       пи возьмите равным 3.1415926
 #       точность указывается в функции round()
-# TODO здесь ваш код
-
+pi = 3.1415926
+circle_area = pi * radius ** 2
+circle_area = round(circle_area, 4)
+print(circle_area)
 
 # Далее, пусть есть координаты точки
 point = (23, 34)
@@ -23,13 +25,17 @@ point = (23, 34)
 #       формула так же есть в интернете
 #       квадратный корень - это возведение в степень 0.5
 #       операции сравнения дают булевы константы True и False
-# TODO здесь ваш код
+hypotenuse = math.sqrt(point[0]**2 + point[1]**2)
+
+print(hypotenuse <= radius)
 
 # Аналогично для другой точки
 point_2 = (30, 30)
 # Если точка point_2 лежит внутри круга (radius = 42), то выведите на консоль True,
 # Или False, если точка лежит вовне круга.
-# TODO здесь ваш код
+hypotenuse_2 = math.sqrt(point_2[0]**2 + point_2[1]**2)
+
+print(hypotenuse_2 <= radius)
 
 # Пример вывода на консоль:
 #
