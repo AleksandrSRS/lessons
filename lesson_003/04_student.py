@@ -10,5 +10,16 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
+ed_grant = 0
+exp = 0
+i = 0
+while i < 10:
+    i += 1
+    ed_grant += educational_grant
+    exp += expenses
+    if i > 1:
+        exp += expenses * 0.03
+    print(ed_grant, exp)
+vdolg = abs(ed_grant-exp)
+print(f"Студенту надо попросить {vdolg:.2f} рублей")
 
-# TODO здесь ваш код
