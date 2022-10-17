@@ -6,7 +6,7 @@ sd.resolution = (1200, 600)
 
 # Нарисовать пузырек - три вложенных окружностей с шагом 5 пикселей
 
-# point = sd.get_point(100, 100)
+point = sd.get_point(100, 100)
 # radius = 80
 # for _ in range(3):
 #     radius += 5
@@ -22,7 +22,7 @@ def bubble(point, step):
         sd.circle(center_position=point, radius=radius, color=909090, width=2)
 
 
-
+bubble(point, 50)
 # Нарисовать 10 пузырьков в ряд
 
 # for x in range(100, 1001, 100):
